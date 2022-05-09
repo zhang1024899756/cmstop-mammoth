@@ -35,6 +35,7 @@
     "hamjest": "2.13.0",
     "http-server": "^14.1.0",
     "mocha": "~2.2.5",
+    "prettier": "^2.6.2",
     "temp": "^0.9.4",
     "uglify-js": "~2.4.8",
     "watchify": "^4.0.0"
@@ -48,6 +49,8 @@
   },
   "scripts": {
     "dev": "node bin/dev",
+    "build:browser": "browserify lib/index.js --standalone mammoth > mammoth.browser.js",
+    "build": "npm run build:browser && uglifyjs mammoth.browser.js > mammoth.browser.min.js",
     "pretest": "eslint lib test",
     "test": "mocha test/**/*.tests.js",
     "prepublish": "make mammoth.browser.min.js"
