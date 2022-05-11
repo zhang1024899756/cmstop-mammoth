@@ -52,8 +52,7 @@
     "build:browser": "browserify lib/index.js --standalone mammoth > mammoth.browser.js",
     "build": "npm run build:browser && uglifyjs mammoth.browser.js > mammoth.browser.min.js",
     "pretest": "eslint lib test",
-    "test": "mocha test/**/*.tests.js",
-    "prepublish": "make mammoth.browser.min.js"
+    "test": "mocha test/**/*.tests.js"
   },
   "license": "BSD-2-Clause"
 }
