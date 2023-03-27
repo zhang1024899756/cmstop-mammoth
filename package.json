@@ -1,7 +1,7 @@
 {
-  "name": "mammoth",
+  "name": "cmstop-mammoth",
   "version": "1.4.21",
-  "author": "Michael Williamson <mike@zwobble.org>",
+  "author": "zhang1024899756",
   "description": "Convert Word documents from docx to simple HTML and Markdown",
   "keywords": [
     "docx",
@@ -14,7 +14,7 @@
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mwilliamson/mammoth.js.git"
+    "url": "https://github.com/zhang1024899756/cmstop-mammoth.git"
   },
   "dependencies": {
     "argparse": "~1.0.3",
